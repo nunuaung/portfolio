@@ -6,11 +6,6 @@ $(document).on('click', 'a[href^="#"]', function (event) {
         scrollTop: $($.attr(this, 'href')).offset().top - 50
     }, 1500);
 });
-// scroll top
-// $("a[href='#top']").click(function() {
-//   $("html, body").animate({ scrollTop: 0 }, "slow");
-//   return false;
-// });
 $(document).ready(function(){
     // hide #back-top first
     $("#go-top").hide();
@@ -33,17 +28,17 @@ $(document).ready(function(){
     });
 });
 // fixed top nav
-document.addEventListener("DOMContentLoaded", function(){
-  window.addEventListener('scroll', function() {
-      if (window.scrollY > 400) {
-        document.getElementById('navbar-top').classList.add('fixed-top');
-        // add padding top to show content behind navbar
-        navbar_height = document.querySelector('.navbar').offsetHeight;
-        document.body.style.paddingTop = navbar_height + 'px';
-      } else {
-        document.getElementById('navbar-top').classList.remove('fixed-top');
-         // remove padding top from body
-        document.body.style.paddingTop = '0';
-      } 
-  });
-}); 
+// document.addEventListener("DOMContentLoaded", function(){
+//     window.addEventListener('scroll', function() {
+//         if (window.scrollY > 400) {
+//             document.getElementById('navbar-top').classList.add('fixed-top');
+//             // add padding top to show content behind navbar
+//             navbar_height = document.querySelector('.navbar').offsetHeight;
+//             document.body.style.paddingTop = navbar_height + 'px';
+//         } else {
+//             document.getElementById('navbar-top').classList.remove('fixed-top');
+//             // remove padding top from body
+//              document.body.style.paddingTop = '0';
+//         } 
+//     });
+// }); 
