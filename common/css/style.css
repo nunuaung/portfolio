@@ -284,7 +284,6 @@ header {
   margin-top: 22px;
   text-align: center;
 }
-
 /* skill */
 .progress{
   height: 7px;
@@ -478,6 +477,9 @@ footer{
   text-align: center;
   font-size: 12px;
 }
+.m-display{
+    display: none;
+  }
 @media all and (max-width: 768px) {
   section {
     margin-bottom: 30px;
@@ -607,5 +609,28 @@ footer{
   }
   address {
     margin-bottom: 10px;
+  }
+}
+@media all and (max-width: 480px){
+  .m-display{
+    display: block;
+  }
+  .main-tit {
+    font-size: 24px;
+  }
+  .name-wrap {
+    font-size: 30px;
+  }
+  .banner-content p {
+    font-size: 20px;
+  }
+  .go-top{
+    right: 15px;
+  }
+  .go-top .icon-top {
+    font-size: 24px;
+  }
+  .clist-wrap h3, .outer-icon {
+    font-size: 18px;
   }
 }
