@@ -172,6 +172,9 @@ header {
 .button-group {
   margin: 20px 0 0 0;
 }
+.button-group a{
+  text-decoration: none;
+}
 .button {
   display: inline-block;
   padding: 13px 25px;
@@ -411,10 +414,16 @@ form .row, .form-group{
   bottom: 20px;
   display: none;
   font-size: 24px;
-  padding: 15px;
+  padding: 5px;
   color: #000;
-  background: #FEBC39;
-  border-radius: 50px;
+  text-decoration: none;
+}
+.go-top:hover, .go-top:focus, .download-btn a:focus{
+  text-decoration: none;
+}
+.go-top .icon-top{
+  color: #FEBC39;
+  font-size: 34px;
 }
 /*footer*/
 footer{
