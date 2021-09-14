@@ -102,11 +102,11 @@ header {
   color: #fff !important;
   transition: .3s all ease-in-out;
   top: 0px;
+  animation: flip 2s infinite alternate;
 }
-.navbar-brand:hover{
-  position: absolute;
-  top: -5px;
-  transition: .3s all;
+@keyframes flip {
+  0% { transform: rotateY(0deg); }
+  100% { transform: rotateY(180deg); }
 }
 .image-border {
   width: 40%;
@@ -249,8 +249,13 @@ header {
   list-style-type: none;
   font-size: 16px; 
 }
-/*.info-list:last-child{
-  border-bottom: 1px solid rgba(255,255,255,0.5);
+/*
+.about-img img{
+  width: 100%;
+}
+.about-img{
+  width: 30%;
+  margin: 0 auto;
 }*/
 .list-left{
   width: 140px;
@@ -310,20 +315,44 @@ header {
 .progress-bar.html{
   width: 98%;
 }
+@keyframes htmlfillbar{
+  from{width: 0;opacity: 0;}
+  to{width: 98%;opacity: 1;}
+}
 .progress-bar.css{
   width: 95%;
+}
+@keyframes cssfillbar{
+  from{width: 0;opacity: 0;}
+  to{width: 95%;opacity: 1;}
 }
 .progress-bar.jquery{
   width: 80%;
 }
+@keyframes jqueryfillbar{
+  from{width: 0;opacity: 0;}
+  to{width: 80%;opacity: 1;}
+}
 .progress-bar.wp{
   width: 85%;
+}
+@keyframes wpfillbar{
+  from{width: 0;opacity: 0;}
+  to{width: 85%;opacity: 1;}
 }
 .progress-bar.ps{
   width: 50%;
 }
+@keyframes psfillbar{
+  from{width: 0;opacity: 0;}
+  to{width: 50%;opacity: 1;}
+}
 .progress-bar.js{
   width: 80%;
+}
+@keyframes jsfillbar{
+  from{width: 0;opacity: 0;}
+  to{width: 80%;opacity: 1;}
 }
 /*contact*/
 .contact-list .left-row{
@@ -493,6 +522,7 @@ footer{
   }
   .navbar{
     display: inherit;
+    min-height: inherit !important;
   }
   .navbar-brand{
     left: 0px;
@@ -512,6 +542,11 @@ footer{
     padding: 13px !important;
     font-size: 16px;
     letter-spacing: 1px;
+    transition: .3s all;
+  }
+  .navbar-nav > li > a:hover{
+    color: #FEBC39 !important;
+    transition: .3s all !important;
   }
   .nav > li > a:before {
     content: none;
@@ -599,6 +634,7 @@ footer{
   /*footer*/
   .footer-nav {
     padding: 20px 0;
+    overflow: hidden;
   }
   .footer-nav h3{
     margin-bottom: 20px;

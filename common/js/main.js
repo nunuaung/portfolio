@@ -27,6 +27,19 @@ $(document).ready(function(){
         });
     });
 });
+// skill bar
+    var offsetTop = $('#skills').offset().top;
+    $(window).scroll(function() {
+        var height = $(window).height();
+        if($(window).scrollTop()+height > offsetTop) {
+            $('.progress-bar.html').css("animation","htmlfillbar 2s");
+            $('.progress-bar.css').css("animation","cssfillbar 2s");
+            $('.progress-bar.jquery').css("animation","jqueryfillbar 2s");
+            $('.progress-bar.wp').css("animation","wpfillbar 2s");
+            $('.progress-bar.ps').css("animation","psfillbar 2s");
+            $('.progress-bar.js').css("animation","jsfillbar 2s");
+        }
+    });
 // fixed top nav
 document.addEventListener("DOMContentLoaded", function(){
     window.addEventListener('scroll', function() {
@@ -42,3 +55,5 @@ document.addEventListener("DOMContentLoaded", function(){
         } 
     });
 }); 
+
+
