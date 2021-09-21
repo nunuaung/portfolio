@@ -354,6 +354,12 @@ header {
   from{width: 0;opacity: 0;}
   to{width: 80%;opacity: 1;}
 }
+/*services*/
+.card{
+  border: 1px solid rgba(255,255,255,0.08);
+  padding: 10px 20px;
+  text-align: center;
+}
 /*contact*/
 .contact-list .left-row{
   margin-bottom: 20px;
