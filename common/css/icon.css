@@ -25,9 +25,14 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-bootstrap:before {
-  content: "\e900";
-  color: #563d7c;
+.icon-pencil:before {
+  content: "\e905";
+}
+.icon-mobile:before {
+  content: "\e958";
+}
+.icon-top:before {
+  content: "\e901";
 }
 .icon-phone:before {
   content: "\e942";
@@ -38,7 +43,7 @@
 .icon-location2:before {
   content: "\e948";
 }
-.icon-embed2:before {
+.icon-web:before {
   content: "\ea80";
 }
 .icon-share2:before {
@@ -56,6 +61,7 @@
 .icon-wordpress:before {
   content: "\eab4";
 }
-.icon-top:before {
-  content: "\e901";
+.icon-bootstrap:before {
+  content: "\e900";
+  color: #563d7c;
 }
