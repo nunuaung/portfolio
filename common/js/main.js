@@ -26,6 +26,21 @@ $(document).ready(function(){
             return false;
         });
     });
+    //match-height
+    $(function(){
+      var window_width = $( window ).width();
+      if (window_width > 768){
+        var height=$('.responsive-h .card-text').height();
+        $('.wordpress-h .card-text').height(height);
+        $('.design-h .card-text').height(height);
+        var spanHeight=$('.design-h span').height();
+        $('.wordpress-h span').height(spanHeight);
+        $('.responsive-h span').height(spanHeight);
+        var titleHeight=$('.wordpress-h .card-title').height();
+        $('.responsive-h .card-title').height(titleHeight);
+        $('.design-h .card-title').height(titleHeight);
+      }
+    });
 });
 // skill bar
     var offsetTop = $('#skills').offset().top;
@@ -55,5 +70,6 @@ document.addEventListener("DOMContentLoaded", function(){
         } 
     });
 }); 
+
 
 

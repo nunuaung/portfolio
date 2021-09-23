@@ -173,7 +173,7 @@ p{
   margin-right: 7px;
   padding: 13px 25px;
   font-size: 16px;
-  font-weight: 400;
+  font-weight: bold;
   text-transform: uppercase;
   color: #fff !important;
   border-radius: 45px;
@@ -358,12 +358,14 @@ p{
 }
 .card-title{
   color: #fff;
+  line-height: 1.2;
 }
 .card span{
   display: block;
   padding: 10px 0;
   font-size: 14px;
   color: #FEBC39;
+  font-style: italic;
 }
 .icon-box{
   display: inline-block;
@@ -462,8 +464,7 @@ form .row, .form-group{
   text-align: center;
 }
 .form-btn .btn{
-  font-size: 14px;
-  font-weight: 400;
+  font-weight: bold;
   text-transform: uppercase;
 }
 .go-top{
@@ -480,8 +481,11 @@ form .row, .form-group{
   text-decoration: none;
 }
 .go-top .icon-top{
+  padding: 2px;
   font-size: 34px;
-  color: #FEBC39;
+  background: #febc39;
+  color: #000;
+  border-radius: 100%;
 }
 /*footer*/
 footer{
@@ -545,11 +549,11 @@ footer{
     margin-bottom: 30px;
   }
   p{
-    font-size: 14px;
+    font-size: 12px;
   }
   .sub-tit {
     margin: 0 0 10px 25px;
-    font-size: 22px;
+    font-size: 20px;
   }
   .navbar{
     display: inherit;
@@ -634,6 +638,7 @@ footer{
   }
   .col-wrap h3{
     font-size: 20px;
+    line-height: 1.2;
   }
   .about .download-btn{
     margin-top: 0;
@@ -668,6 +673,12 @@ footer{
   .services .underline{
     margin-bottom: 60px;
   }
+  .card-title{
+    font-size: 20px;
+  }
+  .card span{
+    padding: 0 0 10px 0;
+  }
   /*contact*/
   .contact-form > form > .row > .col-md-6:first-child{
     margin-bottom: 20px;
@@ -696,6 +707,12 @@ footer{
   }
   address {
     margin-bottom: 10px;
+  }
+  .go-top{
+    right: 15px;
+  }
+  .go-top .icon-top{
+    font-size: 28px;
   }
 }
 @media all and (max-width: 480px){
