@@ -654,7 +654,7 @@ footer{
   }
   /*services*/
   .card{
-    margin: 0 45px 75px 45px;
+    margin: 0 0px 75px 0px;
     padding: 37px 15px 15px 15px;
   }
   .services .col-md-4:last-child .card{
