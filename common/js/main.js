@@ -43,7 +43,7 @@ $(document).ready(function(){
     });
 });
 // skill bar
-    var offsetTop = $('#skills').offset().top;
+var offsetTop = $('#skills').offset().top;
     $(window).scroll(function() {
         var height = $(window).height();
         if($(window).scrollTop()+height > offsetTop) {
@@ -70,6 +70,13 @@ document.addEventListener("DOMContentLoaded", function(){
         } 
     });
 }); 
+//close menu after click item
+const linkItem = document.querySelectorAll(".link-item");
+linkItem.forEach(x=>x.addEventListener("click", closeMenu));
 
+const collapse = document.querySelector(".collapse");
+function closeMenu(){
+    collapse.classList.remove('in');
+}
 
 
